@@ -1,0 +1,39 @@
+This is for my (samuel varney)'s usage
+
+SQL COMMANDS:
+
+- mysql -u root -p: Enters the SQL command shell
+- SHOW DATABASES: Shows a list of sql databases on my computer
+- USE <database>: Let's me check into a database to use it
+- DROP DATABASE IF EXISTS <database>: When a file with this is executed form the command line, it will delete a database with the specified <database> name
+- CREATE DATABASE <database>: Creates a new database
+------------------------------------------------
+- CREATE TABLE <table> (   ----> Creates a new table
+    id INTEGER(11) AUTO_INCREMENT PRIMARY KEY,
+    <name> VARCHAR(100),
+    <name> INTEGER(11),
+);
+--------------------------------------------------
+- SHOW TABLES: Shows the tables in the database im currently in
+---------------------------------------------------
+- INSERT INTO <table> (<name>, <name>) ---> Inserts data into tables
+  VALUES ('value', 12)
+         ('value', 12);
+---------------------------------------------------
+- SELECT * FROM <table>: Shows everything in the table (* = all)
+----------------------------------------------------
+- SELECT <name> ---> Selects specific things from a table
+  FROM <table>
+  WHERE id = <id>;
+---------------------------------------------------
+- DROP DATABASE <database>: Removes a database from the computer
+- source <file.sql>: Executes code in the specified file
+- DESCRIBE <table>: Shows all the data information about the spcified <table>
+---------------------------------------------------
+- UPDATE <table>  --------> Updates a table 
+  SET <name> = <value>
+  WHERE <name(id, probably)> = <value>
+------------------------------------------------------
+- DELETE FROM <table> ------> Deletes something from a table
+  WHERE <name> = <value>
+------------------------------------------------------
