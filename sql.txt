@@ -6,6 +6,7 @@ SQL COMMANDS:
 - SHOW DATABASES: Shows a list of sql databases on my computer
 - USE <database>: Let's me check into a database to use it
 - DROP DATABASE IF EXISTS <database>: When a file with this is executed form the command line, it will delete a database with the specified <database> name
+- DROP TABLE IF EXISTS <table>: " ^ " ^ " ^ " ^ " ^ " ^ " ^ " ^ " ^ " ^ " ^ " ^ "
 - CREATE DATABASE <database>: Creates a new database
 ------------------------------------------------
 - CREATE TABLE <table> (   ----> Creates a new table
@@ -37,3 +38,19 @@ SQL COMMANDS:
 - DELETE FROM <table> ------> Deletes something from a table
   WHERE <name> = <value>
 ------------------------------------------------------
+- ALTER TABLE: Getting ready to alter a table with a new column 
+- ADD COLUMN: Adds a new column to a table
+- CONSTRAINT: Allows to flag a column as an official foreign key 
+- FOREIGN KEY <column> REFERENCES <table(row)>: Follows the CONSTRAINT to create a foreign key
+- ON DELETE SET NULL: Follows the FOREIGN KEY REFERENCES to say that if a <row> in the <table> being linked is deleted, to set the value in the table doing the referencing to NULL
+- *****NOTE***** A table that references another with a foreign key must come AFTER the table that it references in schema.sql files. SAME THING When deleting the tables, 
+for some reason they must go in the oppostire order.
+--------------------------------------------------------------
+- SELECT * FROM candidates  -------> Command initiates a LEFT JOIN 
+LEFT JOIN parties ON candidates.party_id = parties.id;
+
+- SELECT candidates.*, parties.name
+FROM candidates
+LEFT JOIN parties ON candidates.party_id = parties.id;
+--------------------------------------------------------------
+- 
