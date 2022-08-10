@@ -53,4 +53,4 @@ LEFT JOIN parties ON candidates.party_id = parties.id;
 FROM candidates
 LEFT JOIN parties ON candidates.party_id = parties.id;
 --------------------------------------------------------------
-- 
+- <coulmn> DATETIME DEFAULT CURRENT_TIMESTAMP: Gets the current timestamp of when another row was added
