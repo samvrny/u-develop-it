@@ -54,3 +54,4 @@ FROM candidates
 LEFT JOIN parties ON candidates.party_id = parties.id;
 --------------------------------------------------------------
 - <coulmn> DATETIME DEFAULT CURRENT_TIMESTAMP: Gets the current timestamp of when another row was added
+- SELECT * FROM <table> ORDER BY <column> DESC: Shows everything in a column in descending order
